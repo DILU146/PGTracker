@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    color: #4a3b40;
+    padding-bottom: 40px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: #f7c6d9;
+    padding: 35px 20px;
+    border-radius: 0 0 25px 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+/* Progress section */
+.progress-section {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.progress-section h2 {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    background: #eee;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+#progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #e98aae;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+/* Bag sections */
+.bag-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.bag-section h2 {
+    color: #d66d91;
+    margin-bottom: 20px;
+}
+
+/* Checklist */
+.bag-section label {
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.bag-section input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* Completion message */
+.complete-message {
+    display: none;
+    background: #f8d9e5;
+    text-align: center;
+    padding: 25px;
+    border-radius: 18px;
+    margin-top: 25px;
+}
+
+.complete-message h2 {
+    color: #bd4670;
+    margin-bottom: 10px;
+}
+
+.complete-message p {
+    font-size: 16px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .bag-section {
+        padding: 20px;
+    }
+
+    .bag-section label {
+        font-size: 15px;
+    }
+}
+
+.back-button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 24px;
+    background-color: #d85c91;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #c4477d;
+}
+
+.clear-button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background-color: #ddd;
+    color: #555;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background-color: #ccc;
+}

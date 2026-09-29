@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weekly Journey</title>
+
+    <link rel="stylesheet" href="weekly.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="account-menu">
+    <button class="account-button" onclick="toggleAccountMenu()">
+        👤 Account ▾
+    </button>
+
+    <div id="accountDropdown" class="account-dropdown">
+
+        <p id="accountEmail"></p>
+
+        <button onclick="changePassword()">
+            🔑 Change Password
+        </button>
+
+        <button onclick="logout()">
+            🚪 Logout
+        </button>
+
+    </div>
+</div>
+        <h1>Pregnancy Journey 🌸</h1>
+        <p>Explore your baby's growth week by week</p>
+    </header>
+
+    <main>
+
+        <section class="pregnancy-info">
+            <h2 id="currentWeek"></h2>
+            <p id="dueDate"></p>
+        </section>
+
+        <section id="weeksContainer">
+            <!-- 40 weeks will be created by JavaScript -->
+        </section>
+
+    </main>
+
+    <script src="weekly.js"></script>
+
+</body>
+</html>

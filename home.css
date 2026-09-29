@@ -1,0 +1,129 @@
+/* HOME PAGE */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff7fb;
+    color: #444;
+}
+
+/* Header */
+
+header {
+    background-color: #d85c91;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* Sections */
+
+section {
+    background-color: white;
+    margin-bottom: 35px;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Welcome section */
+
+section:first-child {
+    text-align: center;
+}
+
+section:first-child h3 {
+    color: #555;
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: normal;
+}
+
+/* Start button */
+
+button {
+    background-color: #d85c91;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #c4477d;
+}
+
+/* About section */
+
+section:nth-child(2) {
+    text-align: center;
+}
+
+section:nth-child(2) h2 {
+    color: #d85c91;
+    font-size: 28px;
+}
+
+section:nth-child(2) h3 {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: normal;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    section {
+        padding: 25px 18px;
+    }
+
+    section:first-child h3 {
+        font-size: 17px;
+    }
+
+    section:nth-child(2) h2 {
+        font-size: 24px;
+    }
+
+    section:nth-child(2) h3 {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}

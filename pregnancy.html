@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pregnancy Setup</title>
+    <link rel="stylesheet" href="pregnancy.css">
+</head>
+
+<body>
+
+    <button type="button" class="back-btn" onclick="history.back()">← Back</button>
+
+    <header>
+        <h1>Start Your Pregnancy Journey 🌸</h1>
+
+        <h3>
+            Enter the first day of your last menstrual period (LMP).
+        </h3>
+    </header>
+
+    <form id="pregnancyForm">
+
+        <div>
+            <input type="date" id="lmpDate">
+        </div>
+
+        <button type="submit" id="continueBtn">
+            Continue
+        </button>
+
+    </form>
+
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

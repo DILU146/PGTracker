@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Test Data</title>
+</head>
+
+<body>
+
+    <h2>Clear old project data</h2>
+
+    <button onclick="clearData()">
+        Clear Data
+    </button>
+
+    <script>
+        function clearData() {
+            localStorage.clear();
+            alert("Old data cleared successfully!");
+        }
+    </script>
+
+</body>
+</html>

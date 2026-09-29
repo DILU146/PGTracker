@@ -1,0 +1,277 @@
+/* WEEKLY JOURNEY */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff7fb;
+    color: #444;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    background-color: #d85c91;
+    color: white;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 34px;
+}
+
+header p {
+    margin: 0;
+    font-size: 17px;
+}
+
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* Pregnancy information */
+
+.pregnancy-info {
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.pregnancy-info h2 {
+    color: #d85c91;
+}
+
+/* Week cards */
+
+.week-card {
+    background-color: white;
+    padding: 22px;
+    margin-bottom: 18px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.week-card h2 {
+    color: #d85c91;
+    margin-top: 0;
+}
+
+.week-card p {
+    color: #777;
+}
+
+/* Explore button */
+
+.week-card button {
+    background-color: #d85c91;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.week-card button:hover {
+    background-color: #c4477d;
+}
+
+/* Locked weeks */
+
+.week-card.locked {
+    opacity: 0.55;
+    background-color: #f5f5f5;
+}
+
+.week-card.locked h2 {
+    color: #888;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .week-card {
+        padding: 18px;
+    }
+}
+
+/* WEEK CONTENT */
+
+.week-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.week-content h2 {
+    text-align: center;
+    color: #d85c91;
+    margin-bottom: 30px;
+}
+
+.week-content h3 {
+    color: #d85c91;
+    margin-top: 25px;
+}
+
+.week-content p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.week-content textarea {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.week-content textarea:focus {
+    border-color: #d85c91;
+}
+
+.week-content button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    background-color: #d85c91;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.week-content button:hover {
+    background-color: #c4477d;
+}
+
+.hospital-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.popup-box {
+    background-color: white;
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+.popup-box h2 {
+    color: #d85c91;
+    margin-bottom: 15px;
+}
+
+.popup-box p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.popup-box button {
+    background-color: #d85c91;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.popup-box button:hover {
+    background-color: #c4477d;
+}
+
+.account-menu {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+.account-button {
+    background: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.account-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    background: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.account-dropdown.show {
+    display: block;
+}
+
+.account-dropdown p {
+    margin: 5px 0 12px;
+    font-size: 14px;
+    word-break: break-word;
+    color: #333;
+}
+
+.account-dropdown button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #f5f5f5;
+}
+
+.account-dropdown button:hover {
+    background: #e9e9e9;
+}
