@@ -47,7 +47,7 @@ section:first-child {
     padding: 55px 30px;
 }
 
-section:first-child h3 {
+section:first-child h5 {
     font-size: 22px;
     line-height: 1.7;
     font-weight: 500;
@@ -59,7 +59,7 @@ button {
     margin-top: 30px;
     border: none;
     border-radius: 30px;
-    background: linear-gradient(135deg, #d878a9, #a979d1);
+    background: linear-gradient(135deg, #d878a9, #eb4e9f);
     padding: 15px 32px;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(150, 100, 160, 0.25);
@@ -80,44 +80,5 @@ button a {
 
 /* About section */
 section:nth-child(2) h2 {
-    color: #d85c91;
-    font-size: 28px;
-}
-
-section:nth-child(2) h3 {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.8;
-    font-weight: normal;
-}
-
-/* Mobile */
-
-@media (max-width: 600px) {
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    main {
-        width: 92%;
-        margin: 25px auto;
-    }
-
-    section {
-        padding: 25px 18px;
-    }
-
-    section:first-child h3 {
-        font-size: 17px;
-    }
-
-    section:nth-child(2) h2 {
-        font-size: 24px;
-    }
-
-    section:nth-child(2) h3 {
-        font-size: 15px;
-        line-height: 1.7;
-    }
+    color: #cb118a;
 }
